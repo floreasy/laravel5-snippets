@@ -1,7 +1,11 @@
 <snippet>
-	<content><![CDATA[use App\\${1};]]></content>
+	<content><![CDATA[
+@unless(${1:$var})
+	${2}
+@endunless
+]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>l-use</tabTrigger>
+	<tabTrigger>l-unless</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
